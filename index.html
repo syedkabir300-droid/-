@@ -1,10 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIP Access Portal</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1830050998199926');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1830050998199926&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     * {
       margin: 0;
@@ -113,10 +132,10 @@
     <p>Daily verified updates aur official game registration ke liye niche select karein:</p>
 
     <!-- 1. Telegram Deep Link Button -->
-    <a id="telegramBtn" class="btn btn-telegram" href="https://t.me/+GMTnuLiWcr4wOTQ1">🚀 JOIN VIP TELEGRAM</a>
+    <a id="telegramBtn" class="btn btn-telegram" href="https://t.me/+GMTnuLiWcr4wOTQ1" onclick="trackLead('Telegram')">🚀 JOIN VIP TELEGRAM</a>
 
     <!-- 2. Game Register Link Button -->
-    <a class="btn btn-register" href="https://maanwin66.com/register?inviteCode=JW8ZRYN&from=web" target="_blank">🎮 REGISTER OFFICIAL GAME</a>
+    <a class="btn btn-register" href="https://maanwin66.com/register?inviteCode=JW8ZRYN&from=web" target="_blank" onclick="trackLead('GameRegister')">🎮 REGISTER OFFICIAL GAME</a>
 
     <div class="footer-text">
       <span class="loader"></span> Opening Telegram app...
@@ -124,16 +143,21 @@
   </div>
 
   <script>
-    // Private invite hash
-    const privateInviteHash = "GMTnuLiWcr4wOTQ1";
+    // Button click hone par Meta Pixel ko 'Lead' event bhejne ka function
+    function trackLead(label) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: label });
+      }
+    }
 
+    const privateInviteHash = "GMTnuLiWcr4wOTQ1";
     const appUrl = "tg://join?invite=" + privateInviteHash;
     const webUrl = "https://t.me/+" + privateInviteHash;
 
     // Direct Telegram App trigger (Meta in-app browser bypass)
     window.location.href = appUrl;
 
-    // Fallback: Agar kisi device mein deep-link trigger na ho
+    // Fallback: Agar kisi phone mein deep-link trigger na ho
     setTimeout(() => {
       document.getElementById("telegramBtn").href = webUrl;
     }, 1500);

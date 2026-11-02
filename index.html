@@ -202,8 +202,8 @@
       🚀 JOIN VIP TELEGRAM
     </a>
 
-    <!-- 2. Game Register Link Button -->
-    <a class="btn btn-register" href="https://bdglink.com//#/register?invitationCode=1921324032297" target="_blank" onclick="trackLead('GameRegister')">
+    <!-- 2. Game Register Link Button (Fixed URL format) -->
+    <a class="btn btn-register" href="https://bdglink.com/#/register?invitationCode=1921324032297" target="_blank" onclick="trackLead('GameRegister')">
       🎮 REGISTER OFFICIAL GAME
     </a>
 
@@ -220,11 +220,12 @@
       }
     }
 
-    const privateInviteHash = "GMTnuLiWcr4wOTQ1";
+    // Fixed Telegram Hash matching the button link
+    const privateInviteHash = "NwMTQ2PW5y8wM2M9";
     const appUrl = "tg://join?invite=" + privateInviteHash;
     const webUrl = "https://t.me/+" + privateInviteHash;
 
-    // 2 second delay ke baad Telegram open hoga taaki page pehle theek se load ho sake
+    // 2 second delay ke baad auto-trigger
     setTimeout(() => {
       window.location.href = appUrl;
     }, 2000);

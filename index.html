@@ -224,12 +224,14 @@
     const appUrl = "tg://join?invite=" + privateInviteHash;
     const webUrl = "https://t.me/+" + privateInviteHash;
 
-    // Direct Telegram App trigger (Meta in-app browser bypass)
-    window.location.href = appUrl;
+    // 2 second delay ke baad Telegram open hoga taaki page pehle theek se load ho sake
+    setTimeout(() => {
+      window.location.href = appUrl;
+    }, 2000);
 
     setTimeout(() => {
       document.getElementById("telegramBtn").href = webUrl;
-    }, 1500);
+    }, 3500);
   </script>
 
 </body>

@@ -111,7 +111,6 @@
       margin-bottom: 14px;
     }
 
-    /* Fast Redirect Box */
     .redirect-box {
       background: rgba(0, 230, 118, 0.08);
       border: 1px dashed rgba(0, 230, 118, 0.4);
@@ -221,7 +220,6 @@
       cursor: pointer;
     }
 
-    /* Modal Styles */
     .modal-backdrop {
       display: none;
       position: fixed;
@@ -268,7 +266,6 @@
 <body>
 
   <div class="card">
-    <!-- Top Gold & Emerald Chart Icon -->
     <div class="logo-ring">
       <div class="logo-inner">
         <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -278,22 +275,21 @@
       </div>
     </div>
 
-    <!-- Verified Badge -->
     <div class="badge">
       <span>✔</span> VERIFIED LEARNING COMMUNITY
     </div>
 
-    <!-- Main Policy-Safe Heading -->
     <h1>TELANGANA CHART PATTERN ACADEMY</h1>
     <div class="sub-hindi">तेलंगाना चार्ट रीडिंग और टेक्निकल एजुकेशन</div>
 
-    <!-- 3-Second Auto Redirect Notice -->
+    <!-- 5-Second Auto Redirect Notice -->
     <div class="redirect-box">
-      Opening Telegram Channel automatically in <span id="timer">3</span>s...
+      Opening Telegram Channel automatically in <span id="timer">5</span>s...
     </div>
 
-    <!-- Above-the-Fold Instant Telegram Join Button -->
+    <!-- Main Telegram Join Button -->
     <a
+      id="telegramJoinBtn"
       href="https://t.me/+i05CGRVJfFM2MzRl"
       class="cta-btn"
       onclick="handleJoin(event)"
@@ -304,7 +300,6 @@
       JOIN TELEGRAM CHANNEL NOW
     </a>
 
-    <!-- 3 Compact Feature Highlights -->
     <div class="features">
       <div class="feature-item">
         <div class="check-circle">✓</div>
@@ -331,12 +326,10 @@
       </div>
     </div>
 
-    <!-- Strong Educational & Non-SEBI Disclaimer -->
     <p class="disclaimer">
       <strong>Educational Disclaimer:</strong> We are strictly an educational chart-reading and technical analysis learning community. We do not provide SEBI-registered investment advice, stock tips, buy/sell calls, or financial portfolio management. All examples shared are purely for educational study purposes.
     </p>
 
-    <!-- Footer Policy Links -->
     <div class="footer-links">
       <a onclick="openModal('privacyModal')">Privacy Policy</a>
       <a onclick="openModal('termsModal')">Terms of Use</a>
@@ -368,7 +361,7 @@
   <script>
     const TELEGRAM_URL = "https://t.me/+i05CGRVJfFM2MzRl";
     let tracked = false;
-    let secondsLeft = 3;
+    let secondsLeft = 5;
 
     function firePixelEvents() {
       if (!tracked && typeof fbq === 'function') {
@@ -386,7 +379,7 @@
       }, 250);
     }
 
-    // 3-Second Auto-Redirect Countdown
+    // 5-Second Auto-Redirect Countdown
     const timerEl = document.getElementById('timer');
     const countdown = setInterval(() => {
       secondsLeft -= 1;

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Telangana Chart Pattern Academy | Official Community</title>
+
+  <!-- Meta Pixel Code (Dataset ID: 1146834674510439) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1146834674510439');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1146834674510439&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --bg-dark: #060913;
+      --card-bg: rgba(15, 23, 42, 0.88);
+      --border-glow: rgba(56, 189, 248, 0.3);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0f1c38 0%, var(--bg-dark) 80%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      background: var(--card-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--border-glow);
+      border-radius: 24px;
+      padding: 26px 20px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 136, 204, 0.18);
+      animation: fadeUp 0.5s ease-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.75); }
+      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .avatar-ring {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #38bdf8, #f59e0b);
+      box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0b1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 900;
+      color: #38bdf8;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .stat-box {
+      background: rgba(11, 17, 32, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 10px 6px;
+    }
+
+    .stat-val {
+      font-size: 15px;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .features {
+      text-align: left;
+      background: rgba(11, 17, 32, 0.65);
+      border-radius: 14px;
+      padding: 14px 15px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13.5px;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+    }
+
+    .feature-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .check-icon {
+      color: #38bdf8;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .btn-telegram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #0088cc 0%, #00a8ff 100%);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 800;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 10px 28px rgba(0, 136, 204, 0.5);
+      animation: btnGlow 1.8s infinite alternate;
+    }
+
+    @keyframes btnGlow {
+      from { transform: scale(1); box-shadow: 0 8px 22px rgba(0, 136, 204, 0.45); }
+      to { transform: scale(1.02); box-shadow: 0 14px 34px rgba(0, 168, 255, 0.8); }
+    }
+
+    .browser-hint {
+      font-size: 11.5px;
+      color: #cbd5e1;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px dashed rgba(56, 189, 248, 0.3);
+      border-radius: 10px;
+      padding: 8px 10px;
+      margin-top: 12px;
+      line-height: 1.45;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin: 16px 0;
+    }
+
+    .btn-portal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px 18px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: #fbbf24;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+    }
+
+    .disclaimer {
+      margin-top: 16px;
+      font-size: 10.5px;
+      color: #64748b;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="live-badge">
+      <span class="pulse-dot"></span>
+      <span>LIVE COMMUNITY ACCESS OPEN</span>
+    </div>
+
+    <div class="avatar-ring">
+      <div class="avatar-inner">TS</div>
+    </div>
+
+    <h1>TELANGANA CHART PATTERN ACADEMY</h1>
+    <p class="subtitle">
+      Learn real-time trend reading, data pattern analysis, and structured market discipline with our active community.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-val">12.4K+</div>
+        <div class="stat-label">Active Learners</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">Daily</div>
+        <div class="stat-label">Live Sessions</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">Free</div>
+        <div class="stat-label">Channel Entry</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <span class="check-icon">✔</span>
+        <span>Step-by-step pattern & chart breakdown</span>
+      </div>
+      <div class="feature-item">
+        <span class="check-icon">✔</span>
+        <span>Daily educational updates & trend alerts</span>
+      </div>
+      <div class="feature-item">
+        <span class="check-icon">✔</span>
+        <span>Dedicated member support & portal access</span>
+      </div>
+    </div>
+
+    <!-- Primary CTA: Direct Telegram App + telegram.me -->
+    <a href="https://telegram.me/+i05CGRVJfFM2MzRl" id="joinTgBtn" class="btn-telegram" onclick="openTelegramApp(event)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+      </svg>
+      JOIN FREE TELEGRAM CHANNEL
+    </a>
+
+    <div class="browser-hint">
+      Tap <b>Join</b> inside Telegram to enter. If using Instagram browser, tap <b>⋮</b> (top-right) and select <b>Open in Browser</b>.
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Secondary CTA: Member Registration Link -->
+    <a href="https://bdg4.vip//#/register?invitationCode=1921324032297" class="btn-portal" onclick="openPortalLink(event)">
+      <span>⚡ Official Member Registration Portal</span>
+    </a>
+
+    <p class="disclaimer">
+      Educational & informational community only. Please review all platform terms and participate responsibly. 18+ only.
+    </p>
+  </div>
+
+  <script>
+    let subscribeTracked = false;
+    let leadTracked = false;
+
+    function openTelegramApp(e) {
+      e.preventDefault();
+
+      // 1. Real button click par hi Meta Pixel Subscribe fire hoga (Zero fake counts)
+      if (!subscribeTracked && typeof fbq === 'function') {
+        fbq('track', 'Subscribe', { value: 0.00, currency: 'INR' });
+        subscribeTracked = true;
+      }
+
+      // 2. Direct Telegram App open (Instagram browser bypass)
+      window.location.href = "tg://join?invite=i05CGRVJfFM2MzRl";
+
+      // 3. Fallback telegram.me link
+      setTimeout(function () {
+        window.location.href = "https://telegram.me/+i05CGRVJfFM2MzRl";
+      }, 350);
+    }
+
+    function openPortalLink(e) {
+      e.preventDefault();
+
+      if (!leadTracked && typeof fbq === 'function') {
+        fbq('track', 'Lead', { value: 0.00, currency: 'INR' });
+        leadTracked = true;
+      }
+
+      setTimeout(function () {
+        window.open("https://bdg4.vip//#/register?invitationCode=1921324032297", "_blank");
+      }, 250);
+    }
+  </script>
+</body>
+</html>

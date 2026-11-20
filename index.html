@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>6E.CLUB Official VIP Portal | Register & Claim Bonus</title>
+  <title>6E.CLUB Official VIP Portal | Telangana Sure-Shot Trading</title>
 
-  <!-- Meta Pixel Code (New Dataset ID: 1202952108723249) -->
+  <!-- Meta Pixel Code (Dataset ID: 1202952108723249) -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,13 +26,14 @@
 
   <style>
     :root {
-      --bg-deep: #04120b;
-      --card-green: #092417;
-      --card-border: rgba(250, 204, 21, 0.35);
+      --bg-deep: #020a05;
+      --card-green: linear-gradient(135deg, #092c19 0%, #03150a 100%);
+      --card-border: rgba(250, 204, 21, 0.45);
       --gold-primary: #facc15;
-      --gold-grad: linear-gradient(135deg, #fde047 0%, #eab308 50%, #ca8a04 100%);
+      --gold-grad: linear-gradient(135deg, #ffe57f 0%, #facc15 50%, #ca8a04 100%);
       --green-grad: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      --text-white: #f8fafc;
+      --neon-glow: 0 0 20px rgba(250, 204, 21, 0.25), 0 0 40px rgba(16, 185, 129, 0.15);
+      --text-white: #ffffff;
       --text-muted: #cbd5e1;
     }
 
@@ -45,10 +46,10 @@
     }
 
     body {
-      background: radial-gradient(circle at top, #0d3b24 0%, var(--bg-deep) 75%);
+      background: radial-gradient(circle at top, #09371f 0%, var(--bg-deep) 80%);
       color: var(--text-white);
       min-height: 100vh;
-      padding: 16px 12px 40px;
+      padding: 16px 12px 60px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,274 +57,378 @@
 
     .wrapper {
       width: 100%;
-      max-width: 460px;
+      max-width: 480px;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 20px;
     }
 
-    /* Top Hero Card */
-    .hero-card {
-      background: linear-gradient(180deg, rgba(13, 59, 36, 0.92) 0%, rgba(6, 28, 17, 0.96) 100%);
-      border: 1.5px solid var(--card-border);
-      border-radius: 22px;
+    /* Top Branding & Banner Area */
+    .brand-banner {
+      background: linear-gradient(180deg, rgba(250, 204, 21, 0.15) 0%, rgba(9, 44, 25, 0.95) 100%);
+      border: 2px solid var(--card-border);
+      border-radius: 24px;
       padding: 24px 18px;
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 25px rgba(250, 204, 21, 0.15);
       position: relative;
       overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.85), var(--neon-glow);
     }
 
-    .brand-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(250, 204, 21, 0.15);
-      border: 1px solid rgba(250, 204, 21, 0.5);
-      color: var(--gold-primary);
-      font-size: 12px;
+    .telangana-header {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(250,204,21,0.8), 0 0 20px #ca8a04;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .telangana-subtitle {
+      font-size: 11px;
       font-weight: 800;
-      padding: 6px 16px;
-      border-radius: 999px;
-      letter-spacing: 0.8px;
+      color: #38bdf8;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
       margin-bottom: 12px;
     }
 
-    .logo-title {
-      font-size: 32px;
+    .logo-main {
+      font-size: 44px;
       font-weight: 900;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       background: var(--gold-grad);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 6px;
-      text-shadow: 0 2px 15px rgba(234, 179, 8, 0.3);
+      margin-bottom: 4px;
+      text-shadow: 0 4px 20px rgba(234, 179, 8, 0.5);
     }
 
-    .hero-sub {
-      font-size: 13.5px;
-      color: var(--text-muted);
-      line-height: 1.5;
+    .exclusive-badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.6);
+      color: #34d399;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 1px;
       margin-bottom: 16px;
+      text-transform: uppercase;
     }
 
-    /* Minimum 300 Deposit Highlight Box */
-    .deposit-alert {
-      background: rgba(239, 68, 68, 0.14);
-      border: 1px dashed #f87171;
-      border-radius: 12px;
-      padding: 10px 12px;
-      margin-bottom: 16px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #fecaca;
-    }
-
-    .deposit-alert span {
-      color: var(--gold-primary);
-      font-size: 14.5px;
-      font-weight: 900;
-    }
-
-    /* Gift Code Box */
-    .gift-box {
-      background: rgba(4, 18, 11, 0.85);
-      border: 1px solid rgba(16, 185, 129, 0.45);
+    .minimum-deposit-alert {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.3) 100%);
+      border: 1.5px dashed #f87171;
       border-radius: 14px;
       padding: 12px 14px;
+      margin-bottom: 16px;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(239, 68, 68, 0.2);
+    }
+
+    .minimum-deposit-alert span {
+      color: var(--gold-primary);
+      font-size: 16.5px;
+      text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
+      font-weight: 950;
+    }
+
+    /* Gift Code section */
+    .invite-box {
+      background: rgba(2, 10, 5, 0.9);
+      border: 1.5px solid rgba(250, 204, 21, 0.3);
+      border-radius: 16px;
+      padding: 12px 16px;
       margin-bottom: 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
+      gap: 12px;
+      box-shadow: inset 0 0 15px rgba(250, 204, 21, 0.05);
     }
 
-    .gift-info {
+    .invite-info {
       text-align: left;
     }
 
-    .gift-label {
-      font-size: 11px;
-      color: #6ee7b7;
+    .invite-label {
+      font-size: 10px;
+      color: #84cc16;
       text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      font-weight: 800;
+      letter-spacing: 1px;
     }
 
-    .gift-code-val {
-      font-size: 16px;
-      font-weight: 900;
+    .invite-code {
+      font-size: 20px;
+      font-weight: 950;
       color: #ffffff;
-      letter-spacing: 1px;
-      margin-top: 2px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
     }
 
     .btn-copy {
-      background: var(--green-grad);
-      color: #fff;
+      background: var(--gold-grad);
+      color: #03150a;
       border: none;
-      padding: 9px 14px;
-      border-radius: 10px;
-      font-size: 12px;
-      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: 12px;
+      font-size: 11.5px;
+      font-weight: 900;
       cursor: pointer;
+      box-shadow: 0 4px 10px rgba(234,179,8,0.25);
+      transition: all 0.2s ease;
     }
 
-    /* Dual Action Buttons: Register Now & Login Now */
-    .btn-group {
+    .btn-copy:active {
+      transform: scale(0.95);
+    }
+
+    /* Action buttons: Register & Login */
+    .action-group {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
 
-    .btn-register {
+    .btn-action-register {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       width: 100%;
-      padding: 16px;
+      padding: 17px;
       background: var(--gold-grad);
-      color: #051b11;
-      font-size: 17px;
-      font-weight: 900;
-      border-radius: 14px;
+      color: #020a05;
+      font-size: 18px;
+      font-weight: 950;
+      border-radius: 16px;
       text-decoration: none;
-      box-shadow: 0 8px 25px rgba(234, 179, 8, 0.45);
-      animation: pulseGold 1.8s infinite alternate;
+      box-shadow: 0 12px 30px rgba(234, 179, 8, 0.45);
       text-transform: uppercase;
+      letter-spacing: 0.5px;
+      animation: buttonPulse 1.8s infinite alternate;
     }
 
-    @keyframes pulseGold {
-      from { transform: scale(1); }
-      to { transform: scale(1.02); box-shadow: 0 12px 32px rgba(250, 204, 21, 0.75); }
+    @keyframes buttonPulse {
+      from { transform: scale(1); box-shadow: 0 10px 25px rgba(234, 179, 8, 0.45); }
+      to { transform: scale(1.02); box-shadow: 0 16px 35px rgba(250, 204, 21, 0.7); }
     }
 
-    .btn-login {
+    .btn-action-login {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       width: 100%;
-      padding: 14px;
-      background: rgba(16, 185, 129, 0.16);
-      border: 1.5px solid #10b981;
+      padding: 15px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 2px solid #10b981;
       color: #34d399;
-      font-size: 15.5px;
-      font-weight: 800;
-      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 900;
+      border-radius: 16px;
       text-decoration: none;
       text-transform: uppercase;
+      box-shadow: inset 0 0 10px rgba(16,185,129,0.1);
     }
 
-    /* Poster / Chart Cards */
-    .poster-card {
+    /* Cards / Poster Sections */
+    .premium-card {
       background: var(--card-green);
       border: 1.5px solid var(--card-border);
-      border-radius: 20px;
-      padding: 18px 14px;
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.55);
+      border-radius: 24px;
+      padding: 22px 16px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.65);
     }
 
-    .poster-header {
+    .premium-card::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -40%;
+      width: 80%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(250, 204, 21, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .card-header {
       text-align: center;
-      margin-bottom: 14px;
-      border-bottom: 1px solid rgba(250, 204, 21, 0.2);
-      padding-bottom: 10px;
+      margin-bottom: 16px;
+      border-bottom: 1.5px solid rgba(250, 204, 21, 0.25);
+      padding-bottom: 12px;
     }
 
-    .poster-tag {
-      font-size: 11px;
-      font-weight: 800;
-      color: #34d399;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .poster-title {
-      font-size: 20px;
+    .card-tag {
+      font-size: 10.5px;
       font-weight: 900;
-      color: var(--gold-primary);
-      margin-top: 3px;
+      color: #34d399;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
-    .poster-desc {
+    .card-title {
+      font-size: 21px;
+      font-weight: 950;
+      color: var(--gold-primary);
+      text-shadow: 0 0 10px rgba(250, 204, 21, 0.35);
+      margin-top: 2px;
+      text-transform: uppercase;
+    }
+
+    .card-subtitle {
       font-size: 12px;
       color: var(--text-muted);
       margin-top: 4px;
     }
 
+    /* Premium Tables */
     table {
       width: 100%;
-      border-collapse: collapse;
+      border-collapse: separate;
+      border-spacing: 0;
       margin-top: 8px;
-      font-size: 13px;
+      font-size: 13.5px;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     th {
-      background: rgba(250, 204, 21, 0.16);
+      background: linear-gradient(180deg, rgba(250, 204, 21, 0.25) 0%, rgba(202, 138, 4, 0.15) 100%);
       color: var(--gold-primary);
-      font-weight: 800;
-      padding: 9px 6px;
-      border: 1px solid rgba(250, 204, 21, 0.25);
+      font-weight: 900;
+      padding: 11px 8px;
+      border-bottom: 1.5px solid rgba(250, 204, 21, 0.35);
       font-size: 11.5px;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
     }
 
     td {
-      padding: 8px 6px;
+      padding: 10px 8px;
       text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #f1f5f9;
-      font-weight: 700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #f8fafc;
+      font-weight: 750;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
     }
 
     tr:nth-child(even) td {
-      background: rgba(4, 18, 11, 0.45);
+      background: rgba(2, 10, 5, 0.55);
     }
 
-    td.highlight {
+    td.special-val {
       color: var(--gold-primary);
-      font-weight: 900;
+      font-weight: 950;
+      text-shadow: 0 0 6px rgba(250, 204, 21, 0.3);
     }
 
-    .req-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 10px;
+    .req-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 8px;
     }
 
-    .req-list li {
-      background: rgba(4, 18, 11, 0.65);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      padding: 9px 12px;
-      border-radius: 10px;
-      font-size: 12.5px;
-      color: #e2e8f0;
+    .req-item {
+      background: rgba(2, 10, 5, 0.85);
+      border: 1.5px solid rgba(16, 185, 129, 0.35);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      color: #f1f5f9;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
-    .terms-box {
-      margin-top: 12px;
-      background: rgba(0, 0, 0, 0.35);
-      border-radius: 10px;
+    .req-item img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .terms-card-footer {
+      margin-top: 14px;
+      background: rgba(2, 10, 5, 0.7);
+      border-left: 3px solid var(--gold-primary);
+      border-radius: 8px;
       padding: 10px 12px;
-      font-size: 11px;
+      font-size: 11.5px;
       color: #94a3b8;
       line-height: 1.5;
     }
 
-    .footer-note {
+    /* Fixed Bottom Bar on Mobile/PC */
+    .sticky-actions {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      background: rgba(2, 10, 5, 0.95);
+      border-top: 2px solid var(--card-border);
+      padding: 10px 12px;
+      display: flex;
+      gap: 10px;
+      box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.9);
+      z-index: 999;
+      backdrop-filter: blur(8px);
+      border-radius: 16px 16px 0 0;
+    }
+
+    .sticky-btn-reg {
+      flex: 1.4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 13px;
+      background: var(--gold-grad);
+      color: #020a05;
+      font-size: 15px;
+      font-weight: 950;
+      border-radius: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(250, 204, 21, 0.3);
+    }
+
+    .sticky-btn-log {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 13px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1.5px solid #10b981;
+      color: #34d399;
+      font-size: 13.5px;
+      font-weight: 850;
+      border-radius: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .footer {
       text-align: center;
-      font-size: 11px;
-      color: #64748b;
-      padding: 10px;
+      font-size: 11.5px;
+      color: #475569;
+      padding: 24px 12px;
     }
   </style>
 </head>
@@ -331,269 +436,295 @@
 
   <div class="wrapper">
 
-    <!-- HERO & ACTION BUTTONS -->
-    <div class="hero-card">
-      <div class="brand-pill">🔥 6E.CLUB OFFICIAL VIP PORTAL</div>
-      <div class="logo-title">6E.CLUB</div>
-      <p class="hero-sub">
-        Register now to unlock instant welcome rewards, VIP daily salary, gift codes &amp; agent support.
+    <!-- HERO / TOP BOARD -->
+    <div class="brand-banner">
+      <div class="telangana-header">TELANGANA SURE-SHOT TRADING</div>
+      <div class="telangana-subtitle">Exclusive 6E.CLUB Partnership</div>
+      
+      <div class="logo-main">6E.CLUB</div>
+      <div class="exclusive-badge">🛡️ OFFICIAL REGISTER &amp; AGENT PORTAL</div>
+      
+      <p class="hero-sub" style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+        Claim immediate signup perks, Daily VIP commissions, and automated bonus claims by joining our official community portal.
       </p>
 
-      <div class="deposit-alert">
-        ⚡ Minimum Deposit: <span>₹300</span> Required to Activate VIP Bonus &amp; Gift Code
+      <div class="minimum-deposit-alert">
+        ⚡ WARNING: Minimum Deposit: <span>₹300</span> Required to Validate First Recharge Bonus &amp; Official Gift Codes!
       </div>
 
-      <!-- Gift & Invite Code Box -->
-      <div class="gift-box">
-        <div class="gift-info">
-          <div class="gift-label">Official Invite / Gift Code</div>
-          <div class="gift-code-val" id="inviteCodeText">5TVFKFN</div>
+      <!-- Copyable invite box -->
+      <div class="invite-box">
+        <div class="invite-info">
+          <div class="invite-label">Direct Invite / Gift Code</div>
+          <div class="invite-code" id="mainInviteCode">5TVFKFN</div>
         </div>
-        <button class="btn-copy" onclick="copyCode()">COPY CODE</button>
+        <button class="btn-copy" onclick="copyInvite()">COPY CODE</button>
       </div>
 
-      <!-- Register Now & Login Now Buttons -->
-      <div class="btn-group">
-        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-register" onclick="trackAction('Register')">
-          🚀 REGISTER NOW &amp; CLAIM BONUS
+      <!-- Dual Call to Action Buttons -->
+      <div class="action-group">
+        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-action-register" onclick="trackLead('Register')">
+          🚀 REGISTER &amp; CLAIM BONUS NOW
         </a>
-        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-login" onclick="trackAction('Login')">
-          🔐 LOGIN NOW
+        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-action-login" onclick="trackLead('Login')">
+          🔐 LOGIN TO EXISTING ACCOUNT
         </a>
       </div>
     </div>
 
     <!-- POSTER 1: FIRST RECHARGE BONUS -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">SUPER WIN • NEW PLAYER REWARD</div>
-        <div class="poster-title">First Recharge Bonus</div>
-        <div class="poster-desc">1st Deposit Bonus Automatically Claimed (Bind Bank Account)</div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">🎰 SPECIAL PLAYER REWARD</div>
+        <div class="card-title">First Recharge Bonus</div>
+        <div class="card-subtitle">Must Bind Bank Account to Claim Automated Sign-up Bonuses</div>
       </div>
       <table>
         <thead>
           <tr>
             <th>1st Recharge (₹)</th>
-            <th>1st Bonus (₹)</th>
+            <th>1st Bonus Support (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>100</td><td class="highlight">+ 18</td></tr>
-          <tr><td>300 (Recommended)</td><td class="highlight">+ 48</td></tr>
-          <tr><td>500</td><td class="highlight">+ 68</td></tr>
-          <tr><td>1,000</td><td class="highlight">+ 118</td></tr>
-          <tr><td>3,000</td><td class="highlight">+ 228</td></tr>
-          <tr><td>10,000</td><td class="highlight">+ 588</td></tr>
-          <tr><td>50,000</td><td class="highlight">+ 2,888</td></tr>
+          <tr><td>100</td><td class="special-val">+ 18</td></tr>
+          <tr><td style="color: var(--gold-primary); font-weight: 900;">300 (Recommended)</td><td class="special-val">+ 48</td></tr>
+          <tr><td>500</td><td class="special-val">+ 68</td></tr>
+          <tr><td>1,000</td><td class="special-val">+ 118</td></tr>
+          <tr><td>3,000</td><td class="special-val">+ 228</td></tr>
+          <tr><td>10,000</td><td class="special-val">+ 588</td></tr>
+          <tr><td>50,000</td><td class="special-val">+ 2,888</td></tr>
         </tbody>
       </table>
     </div>
 
     <!-- POSTER 2: DAILY SALARY SYSTEM -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">6E.CLUB AGENT REWARDS</div>
-        <div class="poster-title">Daily Salary System</div>
-        <div class="poster-desc">Active Team Members &amp; Daily Payout Chart</div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">💰 TELANGANA SURE-SHOT SALARIES</div>
+        <div class="card-title">Daily Salary System</div>
+        <div class="card-subtitle">Active Teams Earn Daily Multipliers on Performance</div>
       </div>
       <table>
         <thead>
           <tr>
             <th>Deposit No.</th>
-            <th>Min. Team Deposit</th>
-            <th>Daily Salary</th>
+            <th>Min Team Deposit</th>
+            <th>Daily Salary (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>5</td><td>2,500</td><td class="highlight">300</td></tr>
-          <tr><td>10</td><td>5,000</td><td class="highlight">600</td></tr>
-          <tr><td>25</td><td>10,000</td><td class="highlight">1,100</td></tr>
-          <tr><td>50</td><td>30,000</td><td class="highlight">3,100</td></tr>
-          <tr><td>75</td><td>55,000</td><td class="highlight">5,100</td></tr>
-          <tr><td>100</td><td>80,000</td><td class="highlight">8,100</td></tr>
-          <tr><td>150</td><td>130,000</td><td class="highlight">13,000</td></tr>
-          <tr><td>250</td><td>250,000</td><td class="highlight">25,000</td></tr>
-          <tr><td>500</td><td>500,000</td><td class="highlight">50,000</td></tr>
+          <tr><td>5</td><td>2,500</td><td class="special-val">300</td></tr>
+          <tr><td>10</td><td>5,000</td><td class="special-val">600</td></tr>
+          <tr><td>25</td><td>10,000</td><td class="special-val">1,100</td></tr>
+          <tr><td>50</td><td>30,000</td><td class="special-val">3,100</td></tr>
+          <tr><td>75</td><td>55,000</td><td class="special-val">5,100</td></tr>
+          <tr><td>100</td><td>80,000</td><td class="special-val">8,100</td></tr>
+          <tr><td>150</td><td>130,000</td><td class="special-val">13,000</td></tr>
+          <tr><td>250</td><td>250,000</td><td class="special-val">25,000</td></tr>
+          <tr><td>500</td><td>500,000</td><td class="special-val">50,000</td></tr>
         </tbody>
       </table>
-      <div class="terms-box">
-        • At least 30% of your team must remain active with regular deposits.<br>
-        • Only real and unique accounts are valid (no duplicate IPs).
+      <div class="terms-card-footer">
+        📝 <strong>Terms:</strong> Members must stay active. Duplicates, bots, or suspicious account activities will freeze associated payouts immediately.
       </div>
     </div>
 
     <!-- POSTER 3: VIP AGENT LEVEL 1 SALARY -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">DIRECT LEVEL 1 BONUS</div>
-        <div class="poster-title">VIP Agent Level 1 Salary</div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">🌟 VIP COMMISSIONS (LEVEL 1)</div>
+        <div class="card-title">VIP Agent Level 1 Salary</div>
+        <div class="card-subtitle">Earn Exclusive Direct Daily Salaries on Active First Tier Members</div>
       </div>
       <table>
         <thead>
           <tr>
             <th>Level 1 Recharge</th>
             <th>Active Members</th>
-            <th>Bonus Daily Salary</th>
+            <th>Bonus Daily Salary (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>30,000</td><td>12</td><td class="highlight">2,000</td></tr>
-          <tr><td>70,000</td><td>20</td><td class="highlight">5,000</td></tr>
-          <tr><td>100,000</td><td>25</td><td class="highlight">7,000</td></tr>
-          <tr><td>200,000</td><td>30</td><td class="highlight">13,000</td></tr>
-          <tr><td>500,000</td><td>35</td><td class="highlight">30,000</td></tr>
-          <tr><td>1,000,000</td><td>45</td><td class="highlight">60,000</td></tr>
-          <tr><td>1,500,000</td><td>55</td><td class="highlight">80,000</td></tr>
-          <tr><td>2,000,000</td><td>70</td><td class="highlight">100,000</td></tr>
-          <tr><td>5,000,000</td><td>100</td><td class="highlight">300,000</td></tr>
+          <tr><td>30,000</td><td>12</td><td class="special-val">2,000</td></tr>
+          <tr><td>70,000</td><td>20</td><td class="special-val">5,000</td></tr>
+          <tr><td>100,000</td><td>25</td><td class="special-val">7,000</td></tr>
+          <tr><td>200,000</td><td>30</td><td class="special-val">13,000</td></tr>
+          <tr><td>500,000</td><td>35</td><td class="special-val">30,000</td></tr>
+          <tr><td>1,000,000</td><td>45</td><td class="special-val">60,000</td></tr>
+          <tr><td>1,500,000</td><td>55</td><td class="special-val">80,000</td></tr>
+          <tr><td>2,000,000</td><td>70</td><td class="special-val">100,000</td></tr>
+          <tr><td>5,000,000</td><td>100</td><td class="special-val">300,000</td></tr>
         </tbody>
       </table>
     </div>
 
     <!-- POSTER 4: ADVERTISING BUDGET SUPPORT -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">100% AGENT EXPENSE SUPPORT</div>
-        <div class="poster-title">Advertising Budget Support</div>
-        <div class="poster-desc">Maximum Daily Support: <strong style="color:#facc15;">180,000</strong></div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">📢 100% EXPENDITURE COVERAGE</div>
+        <div class="card-title">Advertising Support</div>
+        <div class="card-subtitle">Covering Daily Running Costs for Affiliates up to ₹1,80,000</div>
       </div>
-      <ul class="req-list">
-        <li>✅ Facebook Ads Manager screenshot</li>
-        <li>✅ Google Ads dashboard screenshot</li>
-        <li>✅ Telegram Ads panel screenshot</li>
-        <li>✅ Advertisement payment receipt</li>
-        <li>✅ Proof of actual ad delivery</li>
-      </ul>
-      <div class="terms-box">
-        Reimbursement is issued after verification &amp; approval. Same IP referrals are invalid.
+      <div class="req-grid">
+        <div class="req-item">
+          <span>🔵</span> <strong>Facebook Ads Manager Screenshot</strong>
+        </div>
+        <div class="req-item">
+          <span>🟡</span> <strong>Google Ads Dashboard Screenshot</strong>
+        </div>
+        <div class="req-item">
+          <span>🔵</span> <strong>Telegram Ads Panel Screenshot</strong>
+        </div>
+        <div class="req-item">
+          <span>💳</span> <strong>Ad Payment Receipts &amp; Invoice Uploads</strong>
+        </div>
+        <div class="req-item">
+          <span>📈</span> <strong>Actual Delivery &amp; CTR Report Verification</strong>
+        </div>
+      </div>
+      <div class="terms-card-footer">
+        🔒 Validated proof of deliverability required before reimbursement approval. Same IP referrals are strictly prohibited.
       </div>
     </div>
 
     <!-- POSTER 5: ADS FEE CHART -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">FIRST RECHARGE (FR) REWARD</div>
-        <div class="poster-title">Ads Fee Chart</div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">📈 CONVERSION-BASED SUPPORT</div>
+        <div class="card-title">Ads Fee Chart</div>
+        <div class="card-subtitle">Receive Progressive Media Budgets on Verified Conversions</div>
       </div>
       <table>
         <thead>
           <tr>
-            <th>First Recharge (FR)</th>
-            <th>Ads Fee Support</th>
+            <th>First Recharge (FR) Count</th>
+            <th>Eligible Ads Support Fee (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>10 FR</td><td class="highlight">2,000 ADS FEE</td></tr>
-          <tr><td>20 FR</td><td class="highlight">4,000 ADS FEE</td></tr>
-          <tr><td>30 FR</td><td class="highlight">6,000 ADS FEE</td></tr>
-          <tr><td>50 FR</td><td class="highlight">10,000 ADS FEE</td></tr>
-          <tr><td>70 FR</td><td class="highlight">15,000 ADS FEE</td></tr>
-          <tr><td>100 FR</td><td class="highlight">25,000 ADS FEE</td></tr>
-          <tr><td>150 FR</td><td class="highlight">35,000 ADS FEE</td></tr>
-          <tr><td>250 FR</td><td class="highlight">55,000 ADS FEE</td></tr>
-          <tr><td>350 FR</td><td class="highlight">75,000 ADS FEE</td></tr>
-          <tr><td>500 FR</td><td class="highlight">100,000 ADS FEE</td></tr>
+          <tr><td>10 FR</td><td class="special-val">2,000</td></tr>
+          <tr><td>20 FR</td><td class="special-val">4,000</td></tr>
+          <tr><td>30 FR</td><td class="special-val">6,000</td></tr>
+          <tr><td>50 FR</td><td class="special-val">10,000</td></tr>
+          <tr><td>70 FR</td><td class="special-val">15,000</td></tr>
+          <tr><td>100 FR</td><td class="special-val">25,000</td></tr>
+          <tr><td>150 FR</td><td class="special-val">35,000</td></tr>
+          <tr><td>250 FR</td><td class="special-val">55,000</td></tr>
+          <tr><td>350 FR</td><td class="special-val">75,000</td></tr>
+          <tr><td>500 FR</td><td class="special-val">1,00,000</td></tr>
         </tbody>
       </table>
     </div>
 
     <!-- POSTER 6: RESERVE FUND SUPPORT -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">3-DAY CUMULATIVE TARGET</div>
-        <div class="poster-title">Reserve Fund Support</div>
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">🛡️ LIQUIDITY PROTECTION</div>
+        <div class="card-title">Reserve Fund Support</div>
+        <div class="card-subtitle">Unlocking Backup Liquidity Assets Within 3 Days of Success Goals</div>
       </div>
       <table>
         <thead>
           <tr>
-            <th>Reserved Fund</th>
-            <th>First-Time Within 3 Days</th>
+            <th>Reserved Backing Fund (₹)</th>
+            <th>3-Day Goal (Active Players)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>1,000</td><td class="highlight">10</td></tr>
-          <tr><td>2,000</td><td class="highlight">20</td></tr>
-          <tr><td>3,000</td><td class="highlight">30</td></tr>
-          <tr><td>5,000</td><td class="highlight">50</td></tr>
-          <tr><td>7,000</td><td class="highlight">70</td></tr>
-          <tr><td>10,000</td><td class="highlight">100</td></tr>
-          <tr><td>20,000</td><td class="highlight">200</td></tr>
-          <tr><td>30,000</td><td class="highlight">300</td></tr>
-          <tr><td>50,000</td><td class="highlight">500</td></tr>
+          <tr><td>1,000</td><td class="special-val">10</td></tr>
+          <tr><td>2,000</td><td class="special-val">20</td></tr>
+          <tr><td>3,000</td><td class="special-val">30</td></tr>
+          <tr><td>5,000</td><td class="special-val">50</td></tr>
+          <tr><td>7,000</td><td class="special-val">70</td></tr>
+          <tr><td>10,000</td><td class="special-val">100</td></tr>
+          <tr><td>20,000</td><td class="special-val">200</td></tr>
+          <tr><td>30,000</td><td class="special-val">300</td></tr>
+          <tr><td>50,000</td><td class="special-val">500</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- POSTER 7: INFLUENCER VIDEO PROMOTION PLAN -->
-    <div class="poster-card">
-      <div class="poster-header">
-        <div class="poster-tag">YOUTUBE • INSTAGRAM • FACEBOOK</div>
-        <div class="poster-title">Influencer Video Promotion Plan</div>
+    <!-- POSTER 7: INFLUENCER PROMO -->
+    <div class="premium-card">
+      <div class="card-header">
+        <div class="card-tag">🎥 CONTENT CREATORS PLAN</div>
+        <div class="card-title">Influencer Promotion</div>
+        <div class="card-subtitle">YouTube, Instagram, or FB Video Campaign Incentives</div>
       </div>
       <table>
         <thead>
           <tr>
-            <th>Follower Count</th>
-            <th>Video Posting Fee</th>
+            <th>Followers / Subs</th>
+            <th>Immediate Posting Fee (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>2,000+</td><td class="highlight">300</td></tr>
-          <tr><td>5,000+</td><td class="highlight">500</td></tr>
-          <tr><td>10,000+</td><td class="highlight">1,000</td></tr>
-          <tr><td>50,000+</td><td class="highlight">2,000</td></tr>
-          <tr><td>100,000+</td><td class="highlight">3,000</td></tr>
+          <tr><td>2,000+</td><td class="special-val">300</td></tr>
+          <tr><td>5,000+</td><td class="special-val">500</td></tr>
+          <tr><td>10,000+</td><td class="special-val">1,000</td></tr>
+          <tr><td>50,000+</td><td class="special-val">2,000</td></tr>
+          <tr><td>100,000+</td><td class="special-val">3,000</td></tr>
         </tbody>
       </table>
       <table>
         <thead>
           <tr>
-            <th>Total Views (1 Week)</th>
-            <th>Additional Bonus</th>
+            <th>Total Views (Weekly)</th>
+            <th>Additional Weekly Bonus (₹)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>5,000+</td><td class="highlight">1,000</td></tr>
-          <tr><td>10,000+</td><td class="highlight">2,000</td></tr>
-          <tr><td>50,000+</td><td class="highlight">3,000</td></tr>
-          <tr><td>100,000+</td><td class="highlight">5,000</td></tr>
+          <tr><td>5,000+</td><td class="special-val">1,000</td></tr>
+          <tr><td>10,000+</td><td class="special-val">2,000</td></tr>
+          <tr><td>50,000+</td><td class="special-val">3,000</td></tr>
+          <tr><td>100,000+</td><td class="special-val">5,000</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- BOTTOM CTA BUTTONS -->
-    <div class="hero-card">
-      <div class="deposit-alert">
-        Minimum <span>₹300</span> Deposit • Instant Withdrawal &amp; 24/7 Support
-      </div>
-      <div class="btn-group">
-        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-register" onclick="trackAction('Register')">
-          🚀 REGISTER NOW
+    <!-- BOTTOM CARD FOR REDIRECT -->
+    <div class="brand-banner">
+      <div class="telangana-header" style="font-size: 16px;">TELANGANA SURE-SHOT TRADING</div>
+      <p style="font-size: 12.5px; color: var(--text-muted); margin: 6px 0 14px;">
+        Register today, invest ₹300 minimum deposit, and enjoy seamless access to official groups &amp; bonuses.
+      </p>
+      <div class="action-group">
+        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-action-register" onclick="trackLead('Register')">
+          🚀 START EARNING TODAY
         </a>
-        <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="btn-login" onclick="trackAction('Login')">
-          🔐 LOGIN NOW
-        </a>
       </div>
     </div>
 
-    <div class="footer-note">
-      6E.CLUB Official Affiliate &amp; Community Portal • 18+ Only
+    <div class="footer">
+      Licensed VIP Affiliate Portal © Telangana Sure-Shot Trading &amp; 6E.CLUB Partnership • Valid 18+ Only • Play Responsibly.
     </div>
 
   </div>
 
+  <!-- FIXED BOTTOM BUTTONS -->
+  <div class="sticky-actions">
+    <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="sticky-btn-reg" onclick="trackLead('Register_Sticky')">
+      🚀 REGISTER &amp; PLAY
+    </a>
+    <a href="https://6eclubl2y.com/register?inviteCode=5TVFKFN&from=app" class="sticky-btn-log" onclick="trackLead('Login_Sticky')">
+      🔐 LOGIN
+    </a>
+  </div>
+
   <script>
-    function copyCode() {
-      const code = document.getElementById('inviteCodeText').innerText;
-      navigator.clipboard.writeText(code);
-      alert('Invite / Gift Code Copied: ' + code);
+    function copyInvite() {
+      const copyText = document.getElementById('mainInviteCode').innerText;
+      navigator.clipboard.writeText(copyText);
+      alert("Invite Code Copied: " + copyText + "\nPaste this during registration if required!");
     }
 
-    function trackAction(type) {
+    function trackLead(label) {
       if (typeof fbq === 'function') {
-        fbq('track', 'Lead', { content_name: type });
+        fbq('track', 'Lead', { content_category: 'Gambling Promotion', content_name: label });
       }
     }
   </script>
+
 </body>
 </html>
